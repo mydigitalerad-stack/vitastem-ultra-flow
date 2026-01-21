@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Clock, Zap, FileCheck, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroProduct from '@/assets/hero-product.jpg';
-import vitastemProduct from '@/assets/vitastem-product.jpg';
+import vitastemProduct from '@/assets/vitastem-product-transparent.png';
 
 const HeroSection = () => {
   return (
