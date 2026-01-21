@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import vitastemLogo from '@/assets/vitastem-logo.jpg';
 
 const navLinks = [
   { href: '#benefits', label: 'Benefits' },
@@ -39,12 +38,9 @@ const Header = () => {
         <div className="container-wide">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="#" className="flex items-center">
-              <img 
-                src={vitastemLogo} 
-                alt="VitaStem Ultra" 
-                className="h-10 md:h-12 w-auto"
-              />
+            <a href="#" className="flex items-center gap-1">
+              <span className="text-xl md:text-2xl font-bold text-primary">Vita</span>
+              <span className="text-xl md:text-2xl font-bold text-foreground">Stem</span>
             </a>
 
             {/* Desktop Navigation */}
@@ -74,10 +70,9 @@ const Header = () => {
               
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="lg:hidden p-2.5 text-foreground"
-                aria-label="Toggle menu"
+                className="lg:hidden p-2 text-foreground"
               >
-                {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
             </div>
           </div>
