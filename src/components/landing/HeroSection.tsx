@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ShieldCheck, Clock, Zap } from 'lucide-react';
+import { ShieldCheck, Clock, Zap, FileCheck, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroProduct from '@/assets/hero-product.jpg';
 import vitastemProduct from '@/assets/vitastem-product.jpg';
@@ -31,14 +31,16 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <span className="vitastem-badge">
-                <ShieldCheck className="w-4 h-4" />
+              <span className="vitastem-badge text-xs px-2.5 py-1">
+                <ShieldCheck className="w-3.5 h-3.5" />
                 Doctor Formulated
               </span>
-              <span className="vitastem-badge">
+              <span className="vitastem-badge text-xs px-2.5 py-1">
+                <FileCheck className="w-3.5 h-3.5" />
                 FDA Listed
               </span>
-              <span className="vitastem-badge">
+              <span className="vitastem-badge text-xs px-2.5 py-1">
+                <Award className="w-3.5 h-3.5" />
                 US Patented
               </span>
             </motion.div>
@@ -53,7 +55,8 @@ const HeroSection = () => {
               >
                 <span className="text-foreground">Advanced </span>
                 <span className="text-primary">First Aid</span>
-                <br />
+                <span className="hidden md:inline"><br /></span>
+                <span className="md:hidden"> </span>
                 <span className="text-foreground">Topical Antibiotic</span>
               </motion.h1>
               
